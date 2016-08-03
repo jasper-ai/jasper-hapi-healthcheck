@@ -1,6 +1,6 @@
 {
   "name": "jasper-hapi-healthcheck",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "healthcheck endpoint for hapi servers",
   "main": "lib/index.js",
   "scripts": {
@@ -45,8 +45,8 @@
     "standard": "^7.1.2"
   },
   "peerDependencies": {
-		"hapi": "^14.0.0"
-	},
+    "hapi": "^14.0.0"
+  },
   "optionalDependencies": {
     "fsevents": "^1.0.0"
   },
