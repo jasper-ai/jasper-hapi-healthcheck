@@ -1,6 +1,6 @@
 {
   "name": "jasper-hapi-healthcheck",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "dependencies": {
     "accept": {
       "version": "2.1.2",
