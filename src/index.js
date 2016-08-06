@@ -1,12 +1,17 @@
 import pkg from '../package.json'
 
-module.exports.register = (server, options, next) => {
+module.exports.register = (server, {
+  auth: auth = false
+}, next) => {
   server.route([
     {
       method: 'GET',
       path: '/healthcheck',
-      handler (req, reply) {
-        reply({ status: 'ok' })
+      config: {
+        auth,
+        handler (req, reply) {
+          reply({ status: 'ok' })
+        }
       }
     }
   ])
